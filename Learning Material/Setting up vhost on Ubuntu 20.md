@@ -10,20 +10,20 @@ In order to setup vhost you need to install and configure **apache 2** on your u
 The first step is to create directory which contains the website i.e the document root of your site.
 
 create the folder for your website in `var/www/html`:
-```
+```bash
 sudo mkdir /var/www/mysite
 ```
 You need to have root priviliges to create a folder in  `var/www/html`
 
 Now we need to change the permissions for `mysite` so that it can be accessed without root privilages. We will change the owner to current logged-in user to gain full access of `mysite` folder:
-```
+```bash
 sudo chown $USER:$USER /var/www/mysite/
 ```
 Where `$USER` contains name of current logged-in user.
 
 Also we can ensure that `mysite` is readable by all the users:
 
-```
+```bash
 sudo chmod 755 /var/www/mysite/
 ```
 
@@ -33,11 +33,11 @@ Now that we are all done with setting up directory let's add some content to it.
 
 Create a file in `mysite` using `nano
 ` or you can use any editor.
-```
+```bash
 nano /var/www/mysite/index.html
 ```
 Add some content like this:
-```
+```html
 <html>
 <title>My Site</title>
 <body>
@@ -53,7 +53,7 @@ We are all done with setting up content for our site. Let's move on to setup our
 
 Apache provides a default file for virtual host called `000-default.conf` present in `/etc/apache2/sites-available/` which we can copy and modify a bit for our virtual host.
 Let's copy the default file and open it in nano:
-```
+```bash
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/mysite.local.conf
 
 sudo nano /etc/apache2/sites-available/mysite.local.conf
@@ -63,7 +63,7 @@ You will see a bunch of parameters in this file. We will modify four of them for
 `Sever Name` -> the address of your website
 `Document Root` -> the directory which contains the website.
 `Server Alias` -> a sudo or virtual name that should be displayed on search bar while accessing the site.
-```
+```bash
 <VirtualHost *:80>
 
         ServerName 127.0.0.2
@@ -81,25 +81,25 @@ Save the file and exit.
 ### Step 4: Enabling newly added virtual host
 After configuring the virtual host file we have to enable it using `a2ensite` command (which rougly translates to apache2 enable site)
 Change the directory and enable the site:
-```
+```bash
 cd /etc/apache2/sites-available/
 sudo a2ensite mysite.com.conf
 ```
 
 To make the changes restart the apache server
-```
+```bash
 sudo systemctl restart apache2
 ```
 
 ### Step 5: Configuring hosts file
 The last step is to configure `/etc/hosts` file which contains list of IP addresses and names. It acts like a local DNS file.
 Let's open the file using `nano`:
-```
+```bash
 sudo nano /etc/hosts
 ```
 Now add the IP address and name of the site.
 **Note:** the name should be same as the name of file for virtual host i.e `mysite.local.conf`
-```
+```bash
 127.0.0.1       localhost
 127.0.0.2       mysite.local
 ```

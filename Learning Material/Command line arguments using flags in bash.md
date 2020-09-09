@@ -4,7 +4,7 @@ We will accept the name of directory which needs to be created and the path of d
 We will use flags to take input i.e `-i` for name of input directory whose contents will be listed and `-o` for output directory.
 
 This is our current code:
-```
+```bash
 #!/usr/bin/bash
 # Script to create a directory in home with given name and a file containing list of files present in /var/www/html
 NAME="Aastha"
@@ -14,7 +14,7 @@ echo `ls /var/www/html` > ~/$NAME/file_list.txt
 # Getting arguments using `getopts`
 We will use get `getopts` function which returns a list of options(flags) with respective argument. 
 We will use a `while` to iterate through `getopts`
-```
+```bash
 while getopts i:o: flag 
 do
 ```
@@ -23,7 +23,7 @@ Here are we are specifying list of valid options as `i:o:` the `:` represents th
 
 # Storing argument values in variables
 We will use switch `case` to assign values, based on options.
-```
+```bash
 case "${flag}" in
                 i) infolder=${OPTARG}
                         ;;
@@ -37,13 +37,13 @@ The above will comapare `$flag` with `i`,`o` and `*` where `*` can be any thing 
 The `esac` indicates the end of the whole switch `case` block.
 
 # Replacing hard-coded values with new variables
-```
+```bash
 mkdir ~/$outfolder 
 ls $infolder > ~/$outfolder/file_list.txt
 ```
 
 ## Final code
-```
+```bash
 #!/usr/bin/bash
 # Script to create a directory in home with name `$outfolder` and a file containing list of files present in`$infolder`
 while getopts i:o: flag
