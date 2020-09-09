@@ -1,0 +1,61 @@
+#main {
+    display: inline-block;
+    position: relative;
+    background-color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+    border-block: 2px solid;
+    margin: auto;
+    padding: 20px 50px 20px 50px;
+}
+
+#title {
+    
+    text-align: center;
+    text-shadow: 2px 2px rgba(22, 22, 22, 0.5);
+}
+
+#img-div {
+    display:block;
+    margin: auto;
+    float: right;
+    color: wheat;
+    background-color: black;
+    padding: 20px 20px 5px 20px;
+    max-width:300px;
+    border: 2px solid gray;
+    box-shadow: 2px 2px 2px gray;
+    text-align: justify;
+}
+
+#img-caption {
+    font-size: 12px;
+}
+#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#tribute-info {
+
+    padding: 20px;
+    margin: auto;
+    border: 2px solid black;
+}
+
+#tribute-link:link{
+    text-decoration: none;
+    color: black;
+}
+
+#tribute-link:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+#tribute-link:visited{
+    text-decoration: none;
+    color: black;
+}
+
+
