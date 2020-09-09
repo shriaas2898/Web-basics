@@ -3,7 +3,6 @@
     position: relative;
     background-color: wheat;
     font-family: 'Courier New', Courier, monospace;
-    border-block: 2px solid;
     margin: auto;
     padding: 20px 50px 20px 50px;
 }
@@ -16,13 +15,13 @@
 }
 
 #img-div {
-    display:block;
+    display: block;
     margin: auto;
     float: right;
     color: wheat;
     background-color: black;
     padding: 20px 20px 5px 20px;
-    max-width:300px;
+    max-width:200px;
     border: 2px solid gray;
     box-shadow: 2px 2px 2px gray;
     text-align: justify;
@@ -38,10 +37,10 @@
     width: 100%;
 }
 #tribute-info {
-
+    display: block;
     padding: 20px;
     margin: auto;
-    border: 2px solid black;
+    height: 370px;
 }
 
 #tribute-link:link{
