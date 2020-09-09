@@ -6,11 +6,11 @@ This the ordere of selectors from low to high specificity:
 
 | Selector     | CSS                                       | HTML                                                                                               |
 | ------------ | ----------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| element      | a { <br> color: red; <br>}                | ```html <a href="https://example.com"> Example </a>```                                                      |
-| class        | .link { <br> color: blue; <br>}           | ```html <a href="https://example.com" class='link'> Example </a>```                                         |
-| id           | #example-link { <br> color: yellow; <br>} | ```html <a href="https://example.com" class='link' id='example-link'> Example </a>```                       |
-| inline style |                                           | ```html <a href="https://example.com" class='link' id='example-link' style='color: purple'> Example </a>``` |
-| !importatnt  | a { <br> color: red !important; <br>}     | ```html <a href="https://example.com"> Example </a>```                                                      |
+| element      | a { <br> color: red; <br>}                | `<a href="https://example.com"> Example </a>`                                                      |
+| class        | .link { <br> color: blue; <br>}           | `<a href="https://example.com" class='link'> Example </a>`                                         |
+| id           | #example-link { <br> color: yellow; <br>} | `<a href="https://example.com" class='link' id='example-link'> Example </a>`                       |
+| inline style |                                           | `<a href="https://example.com" class='link' id='example-link' style='color: purple'> Example </a>` |
+| !importatnt  | a { <br> color: red !important; <br>}     | `<a href="https://example.com"> Example </a>`                                                      |
 
 If there are multiple rules defined for same selector the the latest one will be followed:
 
