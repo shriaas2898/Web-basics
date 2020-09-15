@@ -5,5 +5,5 @@ List of reading materials:
 - [CSS selector specificity](Learning%20Material/CSS%20selector%20specificity.md)
 
 Code Samples:
-- [Tribute Page](Learning%20Material/Code%20Samples/Tribute%20Page/tribute.html)
+- [Tribute Page](Code%20Samples/Tribute%20Page/tribute.html)
 - [Theme Form](Code%20Samples/Theme%20Form/form.html)
