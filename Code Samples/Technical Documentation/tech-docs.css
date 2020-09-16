@@ -9,6 +9,7 @@
     grid-gap: 10px;
     grid-template-areas: "navbar main-doc";
     grid-template-columns: 20% auto;
+    font-family: 'Kufam', cursive;
   }
 #main-doc {
   grid-area: main-doc;
@@ -28,6 +29,7 @@
   border-right: 2px solid;
   background: #e4cda0;
   box-shadow: 0 0 2px;
+  word-wrap: break-word;
 }
 
 .header {
@@ -35,7 +37,7 @@
 }
 #navbar > * {
     width: 100%;
-    border-bottom: 2px solid;
+    border-top: 2px solid;
     padding: 5px 10px 5px 10px;
     text-transform: capitalize
 }
@@ -78,7 +80,7 @@ code {
   #navbar > * {
     width: max-content;
     border-right: 2px solid;
-    border-bottom: none;
+    border-top: none;
     padding: 5px;
   }
 }
