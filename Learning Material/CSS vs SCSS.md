@@ -133,3 +133,6 @@ CSS equivalent:
   color: white;
 }
 ```
+
+## References
+[W3 schools SASS tutorial](https://www.w3schools.com/sass/default.php)
