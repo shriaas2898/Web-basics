@@ -2,11 +2,6 @@
 If you are a programmer and you are also fed up of repeating same things several times in CSS 
 **SCSS** Or Syntactically Awesome Stylesheet can help you, SCSS is a preprocessor scripting language which can be compiled or interpreted to **CSS**. What does that mean? It provides a more simpler and programatic way of writing **CSS**, so it contains all the features of **CSS** plus some additional features.
 
-## Installation
-- Install Ruby
-- Install SaSS via Ruby Gems
-- Add extension for SASS in your IDE 
-
 ## Key Features of SCSS
 
 ### Variables
@@ -133,6 +128,18 @@ CSS equivalent:
   color: white;
 }
 ```
+## Converting SCSS to CSS
+
+Now that we have a gist about how **SCSS** works let's see how we can convert **SCSS** to **CSS**.
+There are multiple ways to achive this:
+- **Using online compiler:** 
+    You can use online converter like [safeconverter](https://www.safetoconvert.com/scss-to-css-converter), [JSON Formatter](https://jsonformatter.org/scss-to-css) etc, where you can paste your **SCSS** code and it will automatically generate **CSS** code.
+- **Using plugin in IDE:** 
+   IDEs like VScode or Webstrom have an option to compile **SCSS** file find one for your IDE and  install it.
+- **Using Command Line:** 
+    - Install SASS for command line. You download **SASS** from [here](https://github.com/sass/dart-sass/releases/tag/1.26.10)
+    - Execute `sass source/stylesheets/index.scss build/stylesheets/index.css`
 
 ## References
 [W3 schools SASS tutorial](https://www.w3schools.com/sass/default.php)
+[SASS Installation](https://sass-lang.com/install)
