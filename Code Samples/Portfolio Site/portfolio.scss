@@ -1,25 +1,37 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Kufam", cursive;
   left: 0;
+  margin: 0 auto;
+  color: white;
   > *:not(#navbar) {
     padding-top: 50px;
     border: 2px solid;
     width: 100vw;
   }
 }
+a {
+  color: unset;
+}
 #navbar {
   display: inline-block;
   top: 0;
-  
   position: fixed;
   width: 100vw;
   height: content;
   text-align: center;
   background-color: indigo;
-  a {
-    color: white;
-  }
+  column-rule: solid white;
+  column-gap: 30rem;
+  box-shadow: 0 2px 9px rgb(105, 103, 103);
+
+
+
 }
 .section{
 
@@ -39,6 +51,8 @@ body {
   align-items: center;
   h1 {
     width: 100%;
+    text-transform: capitalize;
+    font-size: 72px;
   }
 }
 #project-section {
@@ -52,6 +66,8 @@ body {
   .project {
     border: 2px solid white;
     width: max-content;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+
     .project-title {
       margin-top: 0;
       color: white;
@@ -63,6 +79,10 @@ body {
       width: 300px;
     }
   }
+}
+.project:hover {
+  box-shadow: 0 2px 9px rgb(105, 103, 103);
+  height: calc(initial+10px);
 }
 #contact-section{
   display: flex;

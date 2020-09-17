@@ -1,12 +1,23 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Kufam", cursive;
   left: 0;
+  margin: 0 auto;
+  color: white;
 }
 
 body > *:not(#navbar) {
   padding-top: 50px;
   border: 2px solid;
   width: 100vw;
+}
+
+a {
+  color: unset;
 }
 
 #navbar {
@@ -17,10 +28,12 @@ body > *:not(#navbar) {
   height: content;
   text-align: center;
   background-color: indigo;
-}
-
-#navbar a {
-  color: white;
+  -webkit-column-rule: solid white;
+          column-rule: solid white;
+  -webkit-column-gap: 30rem;
+          column-gap: 30rem;
+  -webkit-box-shadow: 0 2px 9px #696767;
+          box-shadow: 0 2px 9px #696767;
 }
 
 .section {
@@ -46,6 +59,8 @@ body > *:not(#navbar) {
 
 #welcome-section h1 {
   width: 100%;
+  text-transform: capitalize;
+  font-size: 72px;
 }
 
 #project-section {
@@ -65,6 +80,7 @@ body > *:not(#navbar) {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #project-section .project .project-title {
@@ -77,6 +93,12 @@ body > *:not(#navbar) {
 #project-section .project img {
   height: 200px;
   width: 300px;
+}
+
+.project:hover {
+  -webkit-box-shadow: 0 2px 9px #696767;
+          box-shadow: 0 2px 9px #696767;
+  height: calc(initial+10px);
 }
 
 #contact-section {
