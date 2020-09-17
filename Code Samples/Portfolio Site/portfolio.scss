@@ -1,0 +1,73 @@
+$primary-background: wheat;
+$dark-background: #b4a17d;
+$hover-background: #978158;
+body {
+  background-color: $primary-background;
+  font-family: "Kufam", cursive;
+  > *:not(#navbar) {
+    padding-top: 50px;
+    border: 2px solid;
+    width: 100vw;
+  }
+}
+#navbar {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  height: content;
+  text-align: center;
+  background-color: indigo;
+  a {
+    color: white;
+  }
+}
+#welcome-section {
+  display: flex;
+  padding-top: 50px;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  position: relative;
+  background-color: hotpink;
+  overflow-wrap: break-word;
+  align-items: center;
+  h1 {
+    width: 100%;
+    background-color: green;
+  }
+}
+#project-section {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10vh;
+  background-color: lightcoral;
+  text-align: center;
+  padding: 10vh 0;
+  .project {
+    border: 2px solid;
+    .project-title {
+      margin-top: 0;
+      background-color: rgba($color: #000000, $alpha: 0.2);
+      color: white;
+      text-decoration: none;
+      padding: 10px 0;
+    }
+  }
+}
+#footer {
+  background-color: lawngreen;
+}
+
+@media (max-width: 800px) {
+  #project-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 540px) {
+  #project-section {
+    grid-template-columns: 1fr;
+  }
+}
