@@ -1,6 +1,6 @@
 # SCSS vs CSS
 
-If you are a programmer and you are also fed up of repeating same things several times in CSS
+If you are a programmer and you are also fed up of repeating same things several times in CSS,
 **SCSS** Or Syntactically Awesome Stylesheet can help you, SCSS is a preprocessor scripting language which can be compiled or interpreted to **CSS**. What does that mean? It provides a more simpler and programatic way of writing **CSS**, so it contains all the features of **CSS** plus some additional features.
 
 ## Key Features of SCSS
