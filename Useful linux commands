@@ -1,0 +1,5 @@
+# Useful linux commands
+## Rename files by replacing characters
+```bash
+for f in *old*; do mv -v "$f" "$(echo "$f" | sed 's/old/new/g')"; done
+```
