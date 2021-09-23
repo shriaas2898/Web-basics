@@ -3,6 +3,19 @@
 ```bash
 for f in *old*; do mv -v "$f" "$(echo "$f" | sed 's/old/new/g')"; done
 ```
+**Bonus:** for changing filenames in subdirectories use:
+```bash
+for f in  $(find my_dir  -name '*old*'); do mv -v "$f" "$(echo "$f" | sed 's/old/new/g')"; done
+```
+## Find and replace in multiple files at once
+For replacing in current directory or set of files:
+```bash
+for f in myfile* ; do sed -i 's/old/new/g' "$f"; done
+```
+**Bonus:** Recursively find and replace in current and subdirectories
+```bash
+for f in $(grep -r -l old) ; do sed -i 's/old/new/g' "$f"; done
+```
 ## View contents on a specific line without opening the file
 ```bash
 head -line_num filename | tail -1 filename
