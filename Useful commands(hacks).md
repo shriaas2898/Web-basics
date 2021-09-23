@@ -17,7 +17,10 @@ Step 1:
 `SELECT CONCAT("DROP TABLE ", 
 GROUP_CONCAT(table_name), ";") FROM information_schema.tables WHERE 
 table_schema = "<your db name>" AND table_name LIKE "some_pattern";`
+
 Which will give you the drop command, something like:
 `DROP TABLE user_value1, user_value2,......user_value1000;`
+
 Step 2: Just paste the above command and done!
-reference: https://natchiar.wordpress.com/2010/07/28/drop-multiple-table-with-regular-expressions/ 
+
+Reference: https://natchiar.wordpress.com/2010/07/28/drop-multiple-table-with-regular-expressions/ 
